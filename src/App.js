@@ -1,8 +1,16 @@
-import React from "react";
-import Category from "./components/Category/index";
+import React from 'react'
+import { GlobalStyles } from './styles/GlobalStyles'
+import { ListOfCategories } from './components/ListOfCategories'
+import { ListOfPhotoCards } from './components/ListOfPhotoCards'
+import { Logo } from './components/Logo'
 
-export const App = () => {
-  return <Category />;
-};
-
-export default App;
+export default function () {
+  return (
+    <div>
+      <Logo />
+      <GlobalStyles />
+      <ListOfCategories />
+      <ListOfPhotoCards />
+    </div>
+  )
+}

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"version": 2,
 	"name": "petgram",
 	"builds": [
@@ -21,4 +22,16 @@
 			"dest": "index.html"
 		}
 	]
+=======
+  "version": 2,
+  "name": "petgram",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ],
+  "routes": [
+    {"src": "/(.*).js", "dest": "/$1.js"},
+    {"src": "/(.*).json", "dest": "/$1.json"},
+    {"src": "/.*", "dest": "/index.html"}
+  ]
+>>>>>>> 72c53af4ef8a8ccee224cec774929188664d1a00
 }
